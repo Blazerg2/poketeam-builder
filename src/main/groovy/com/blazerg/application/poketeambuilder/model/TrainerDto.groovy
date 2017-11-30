@@ -1,5 +1,6 @@
 package com.blazerg.application.poketeambuilder.model
 
+import com.blazerg.application.poketeambuilder.domain.entity.Pokemon
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import groovy.transform.Canonical
 
@@ -8,4 +9,6 @@ import groovy.transform.Canonical
 class TrainerDto {
 
     String name
+
+    ArrayList<Pokemon> pokeTeam
 }

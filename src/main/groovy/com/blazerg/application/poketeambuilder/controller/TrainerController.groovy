@@ -65,7 +65,9 @@ class TrainerController {
     @PostMapping(value = "/trainers", produces = " application/json")
     @ResponseBody
     void addTrainer(@RequestBody TrainerDto trainerRequest) {
-        Trainer result = this.trainerRepository.save(new Trainer(name: trainerRequest?.name))
+        Trainer result = this.trainerRepository.save(
+                new Trainer(name: trainerRequest?.name, pokeTeam: trainerRequest?.pokeTeam)
+        )
     }
 
     @ApiOperation(

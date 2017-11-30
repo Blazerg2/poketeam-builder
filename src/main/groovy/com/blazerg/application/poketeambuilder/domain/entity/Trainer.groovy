@@ -18,4 +18,7 @@ class Trainer {
 
     @Column(name = 'TRAINERNAME')
     String name
+
+    @Column(name = 'POKETEAM')
+    ArrayList<Pokemon> pokeTeam
 }
