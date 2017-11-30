@@ -5,8 +5,7 @@ import groovy.transform.Canonical
 
 @Canonical
 @JsonIgnoreProperties(ignoreUnknown = true)
-class PokeResponse {
+class TrainerDto {
 
     String name
-
 }
