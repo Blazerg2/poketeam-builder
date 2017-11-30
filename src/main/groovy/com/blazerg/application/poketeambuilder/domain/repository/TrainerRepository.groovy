@@ -7,5 +7,9 @@ import org.springframework.stereotype.Repository
 @Repository
 interface TrainerRepository extends JpaRepository<Trainer, Long> {
 
-
+    /**
+     * @param trainer's name
+     * @return trainer info
+     */
+    List<Trainer> findByName(String name)
 }
